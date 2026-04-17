@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Prenotazione Evento</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione Evento - Jaurias Zadi</title>
     </head>
-    <body>
-        <h1 class="titolo-centrale">Jaurias Zadi Fotografo/videomaker di Eventi, Cerimonie ed Eventi</h1>
-        <h2>Contatti</h2>
-        <p>Puoi contattarmi al cellulare al +393466618062, oppure lasciarmi una mail a jauriaszadi@gmail.com</p>
-        <p>Qui sotto troverai anche un form, dove potrai lasciarmi le tue info, o chiedermi info su i miei lavori fotografici e video.</p>
-         <div class="container">
-            <p class="introduzione">In questo spazio ti invito a lasciarmi i tuoi contatti e a spiegarmi quale tipo di servizio stai cercando. Ma non fermarti ai dettagli tecnici: raccontami qualcosa di te. Per me, capire chi avrò davanti all'obiettivo è il punto di partenza per offrirti un lavoro che ti rispecchi davvero. Che si tratti di un evento, della dolce attesa o della quotidianità in casa, la tua storia guiderà il mio sguardo per creare qualcosa di unico e su misura per te.</p>
+<body>
+    <h1 class="titolo-centrale">Jaurias Zadi - Fotografo e Videomaker</h1>
+    <h2>Contatti</h2>
+    <p>Puoi contattarmi al cellulare al <strong>+39 346 661 8062</strong>, oppure scrivermi a <strong>jauriaszadi@gmail.com</strong></p>
+    
+    <div class="container">
+        <p class="introduzione">
+            In questo spazio ti invito a lasciarmi i tuoi contatti e a spiegarmi quale tipo di servizio stai cercando. 
+            Ma non fermarti ai dettagli tecnici: raccontami qualcosa di te. Per me, capire chi avrò davanti all'obiettivo 
+            è il punto di partenza per offrirti un lavoro che ti rispecchi davvero. Che si tratti di un evento, della 
+            dolce attesa o della quotidianità in casa, la tua storia guiderà il mio sguardo per creare qualcosa di 
+            unico e su misura per te.
+        </p>
+        
+        <form action="#" method="POST">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="full-name" required>
             
-                 <label for="name">Nome</label>
-                 <input type="text" id="name" name="full-name" required>
-                 
-                 <label for="surname">Cognome</label>
-                 <input type="text" id="surname" name="surname" required >
+            <label for="surname">Cognome</label>
+            <input type="text" id="surname" name="surname" required>
 
-                 <label for="email">Email: </label>
-                 <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                 <label for="phone">Telefono: </label>
-                 <input type="phone" id="phone" name="phone" required>
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-                 <label for="Service">Servizio</label>
-                  <select id="service" name="service">
-                    <option value="" disabled selected>scegli il servizio</option>
-                    <option value="photographer">Fotografo</option>
-                    <option value="videomaker">Videomaker</option>
-                    <option value="photo/video">Fotografo&Videomaker</option>
-                </select>
+            <label for="service">Cosa cerchi?</label>
+            <select id="service" name="service">
+                <option value="" disabled selected>Scegli il servizio</option>
+                <option value="photographer">Solo Fotografo</option>
+                <option value="videomaker">Solo Videomaker</option>
+                <option value="photo-video">Entrambi (Foto & Video)</option>
+            </select>
 
-                <label for="type-of-service">Tipo di Servizio</label>
-                  <select id="type-of-service" name="type-of-service">
-                    <option value="" disabled selected>Seleziona il Tipo di Servizio</option>
-                    <option value="evento">Evento</option>
-                    <option value="Cerimonia">Cerimonia</option>
-                    <option value="photo/video">Foto di Famiglia</option>
-                </select>
+            <label for="type-of-service">Tipo di Servizio</label>
+            <select id="type-of-service" name="type-of-service">
+                <option value="" disabled selected>Seleziona l'occasione</option>
+                <option value="evento">Evento</option>
+                <option value="cerimonia">Cerimonia (Matrimonio, Battesimo)</option>
+                <option value="famiglia">Sessione Famiglia / Casa / Gravidanza</option>
+                <option value="Altro">Altro</option>
+            </select>
 
-                 <label for="message" class="motivation">Messaggio</label>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Messaggio"></textarea>
+            <label for="message" class="motivation">Messaggio</label>
+            <textarea id="message" name="message" rows="4" placeholder="Parlami della tua storia o dell'evento che stai organizzando..."></textarea>
 
-                <button tyoe="submin">Invia Rchiesta</button>
-
-               
-
-
-
-                 
-            </form>
-        </div>
-    </body>
+            <button type="submit">Invia Richiesta</button>
+        </form>
+    </div>
+</body>
 </html>
