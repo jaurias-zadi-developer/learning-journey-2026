@@ -1,0 +1,19 @@
+body {
+    background-color: #a8845e;
+    color: #4C362D;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #b39c80;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px #2F2716;
+}
+
+.center {
+    text-align: center;
+}
